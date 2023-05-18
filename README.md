@@ -4,4 +4,4 @@
 `ansible-playbook playbook.yml`
 
 ## Running with Bash
-./downloadpkgs.sh
+`./downloadpkgs.sh`
