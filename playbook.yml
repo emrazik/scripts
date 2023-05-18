@@ -1,0 +1,21 @@
+---
+- name: Package manager and download new package setup
+  hosts: localhost
+  connection: local
+  vars_files:
+    - pkgs.yaml
+  
+  tasks: 
+    - name: Install package manager
+      community.general.homebrew:
+        state: present
+      
+    - name: Install stuff
+      homebrew:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ packages }}"
+      
+      
+
+      

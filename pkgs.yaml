@@ -1,0 +1,11 @@
+---
+packages:
+  - discord
+  - spotify
+  - git
+  - git-lfs
+  - python3
+  - docker
+  - gdb
+  - sqlite
+  - tree
